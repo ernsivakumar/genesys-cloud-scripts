@@ -1,56 +1,34 @@
-# Genesys Cloud Python Scripts
+# Genesys Cloud User Export
 
-A collection of Python scripts for interacting with Genesys Cloud API.
+Export Genesys Cloud users with their assigned divisions, skills, and queues.
 
-## Scripts
-
-### genesys-users-export-with-skills-queues.py
-Exports user data with their assigned divisions, skills, and queues.
-
-**Output Fields:**
+## Output Fields
 - User Name
-- Email Address
+- Email Address  
 - Division
 - Assigned Skills
 - Assigned Queues
 
-**Usage:**
-```bash
-python genesys-users-export-with-skills-queues.py
-```
+## Setup
 
-### genesys-data-exporter.py
-General data exporter for users, queues, and skills.
-
-## Configuration
-
-Update the `CONFIG` dictionary in each script with your credentials:
-
+1. Update the CONFIG section with your credentials:
 ```python
 CONFIG = {
     "client_id": "your-client-id",
     "client_secret": "your-client-secret",
-    "region": "mec1"  # Your Genesys region
+    "region": "your-region"
 }
 ```
 
-## Requirements
-
-- Python 3.7+
-- requests
-- pandas
-
-Install dependencies:
+2. Install dependencies:
 ```bash
 pip install requests pandas
 ```
 
-## Security Notes
+3. Run the script:
+```bash
+python genesys-users-export-with-skills-queues.py
+```
 
-- Never commit credentials to version control
-- Use environment variables for sensitive data in production
-- Export files and logs are excluded from git via .gitignore
-
-## License
-
-MIT License
+## Output
+Results are saved to `exports/` directory as CSV or Excel file.
