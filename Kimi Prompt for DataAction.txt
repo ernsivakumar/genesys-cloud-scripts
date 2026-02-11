@@ -1,0 +1,14 @@
+How to prompt Kimi to generate translation Map , translation Map Defaults and Success Template for a Json Response:
+
+
+Use the Genesys Data Action guide at "/Users/sivakumar.n/Coding/python/GenesysCloud/genesys_data_action_guide.md" and help me generate translation Map , translation Map Defaults and Success Template configurations for this JSON: 
+
+[paste your JSON here]
+
+
+For Example:
+
+
+Use the Genesys Data Action guide at "/Users/sivakumar.n/Coding/python/GenesysCloud/genesys_data_action_guide.md" and help me generate translation Map , translation Map Defaults and Success Template configurations for this JSON. I only need customerId, name, and balance and the output should have these three fields plus a calculated isPremium boolean if balance > 1000.
+
+[paste your JSON here]
